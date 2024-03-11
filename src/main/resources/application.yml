@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-    username: ${USER_NAME} #TODO:??? properties ??? ????? ???
+    username: ${USER_NAME} #TODO: 민감 정보 properties 파일로 옮기기
     password: ${PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
@@ -9,9 +9,9 @@ spring:
       ddl-auto: create
     properties:
       hibernate:
-        #        show_sql: true #System.out ? ?????? ?? SQL? ???, ?? ??? ?? ???? ????? ????
-        format_sql: true #logger? ?? ?????? ?? SQL? ???
-#        use_sql_comments: true #???? ????
+#      show_sql: true #System.out 에 하이버네이트 실행 SQL을 남긴다, 밑의 옵션과 같이 사용하면 중복이기에 주석처리
+        format_sql: true #logger를 통해 하이버네이트 실행 SQL을 남긴다
+#        use_sql_comments: true #추가적인 주석표시
 
 logging.level:
   org.hibernate.SQL: debug
