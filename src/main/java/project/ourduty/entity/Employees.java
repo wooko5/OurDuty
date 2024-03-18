@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
-public class Employee extends BaseEntity {
+public class Employees extends BaseEntity {
 
     @Id
     @Column(name = "employee_id")

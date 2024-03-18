@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
-public class Calendar extends BaseEntity{
+public class Calendars extends BaseEntity{
     @Id
     @Column(name = "calendar_id")
     @GeneratedValue
@@ -18,5 +18,5 @@ public class Calendar extends BaseEntity{
     private String location;
     private String color;
     @Embedded
-    private Schedule schedule;
+    private Schedules schedules;
 }
