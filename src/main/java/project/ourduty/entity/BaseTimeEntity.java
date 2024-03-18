@@ -1,4 +1,4 @@
-package project.ourduty.domain;
+package project.ourduty.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
