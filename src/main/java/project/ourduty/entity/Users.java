@@ -17,6 +17,8 @@ public class Users extends BaseEntity {
     @Column(name = "users_id")
     @GeneratedValue
     private Long id;
+    private String email;
+    private String password;
     private String name;
     private String phoneNumber;
 }
