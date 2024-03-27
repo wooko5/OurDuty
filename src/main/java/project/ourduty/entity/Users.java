@@ -19,6 +19,13 @@ public class Users extends BaseEntity {
     private Long id;
     private String email;
     private String password;
-    private String name;
+    private String username;
     private String phoneNumber;
+
+    public Users(String email, String password, String username, String phoneNumber) {
+        this.email = email;
+        this.password = password;
+        this.username = username;
+        this.phoneNumber = phoneNumber;
+    }
 }
