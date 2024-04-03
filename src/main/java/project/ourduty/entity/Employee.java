@@ -10,22 +10,24 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Entity(name = "users")
-public class Users extends BaseEntity {
+@Entity
+public class Employee extends BaseEntity {
 
     @Id
-    @Column(name = "users_id")
+    @Column(name = "employee_id")
     @GeneratedValue
     private Long id;
-    private String email;
-    private String password;
-    private String username;
+    private String name;
+    private String department;
+    private String job;
+    private Boolean gender;
     private String phoneNumber;
 
-    public Users(String email, String password, String username, String phoneNumber) {
-        this.email = email;
-        this.password = password;
-        this.username = username;
+    public Employee(String name, String department, String job, Boolean gender, String phoneNumber) {
+        this.name = name;
+        this.department = department;
+        this.job = job;
+        this.gender = gender;
         this.phoneNumber = phoneNumber;
     }
 }
