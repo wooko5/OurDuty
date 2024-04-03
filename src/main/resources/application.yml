@@ -1,4 +1,8 @@
 spring:
+  thymeleaf:
+    prefix: classpath:/static/
+    enabled: true
+    cache: false # 타임리프를 수정하고 서버를 재시작하지 않아도 새로고침으로 반영 ==> 운영 시, true로 바꾸는걸 추천
   profiles:
     active: secret
   jpa:
