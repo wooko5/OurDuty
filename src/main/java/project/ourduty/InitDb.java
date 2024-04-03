@@ -31,7 +31,7 @@ public class InitDb {
             entityManager.persist(userA);
             User userB = new User("youyk@asianaidt.com", "1234", "youyk", "01031243566");
             entityManager.persist(userB);
-            User userC = new User("limsh@asianaidt.com", "1234", "limsh", "01099998888");
+            User userC = new User("limhs@asianaidt.com", "1234", "limhs", "01099998888");
             entityManager.persist(userC);
         }
 
