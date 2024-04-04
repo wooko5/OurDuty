@@ -13,7 +13,11 @@ import java.util.stream.Collectors;
 public class EmployeeService {
     private final EmployeeRepository employeeRepository;
 
-    public List<EmployeeResponse> getEmployees() {
+    public List<EmployeeResponse> getAllEmployees() {
         return employeeRepository.findAll().stream().map(EmployeeResponse::new).collect(Collectors.toList());
+    }
+
+    public EmployeeResponse getEmployeeByName(String name) {
+        return new EmployeeResponse(employeeRepository.findEmployeeByName(name));
     }
 }
