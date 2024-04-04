@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import project.ourduty.dto.EmployeeResponse;
+import project.ourduty.dto.response.EmployeeResponse;
 import project.ourduty.service.EmployeeService;
 
 import java.util.List;

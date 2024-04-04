@@ -2,7 +2,7 @@ package project.ourduty.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import project.ourduty.dto.EmployeeResponse;
+import project.ourduty.dto.response.EmployeeResponse;
 import project.ourduty.repository.EmployeeRepository;
 
 import java.util.List;

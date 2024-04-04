@@ -1,4 +1,4 @@
-package project.ourduty.dto;
+package project.ourduty.dto.response;
 
 import lombok.Data;
 import project.ourduty.entity.Employee;
