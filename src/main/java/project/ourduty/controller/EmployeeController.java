@@ -29,7 +29,7 @@ public class EmployeeController {
     }
 
 
-    @ResponseBodyit
+    @ResponseBody
     @GetMapping("/employees")
     public ApiResponse<EmployeeResponse> getEmployeeByName(@RequestParam String name) {
         if (name == null || name.isBlank()) {
