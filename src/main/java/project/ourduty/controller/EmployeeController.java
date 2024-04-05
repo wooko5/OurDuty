@@ -29,11 +29,11 @@ public class EmployeeController {
     }
 
 
-    @ResponseBody
+    @ResponseBodyit
     @GetMapping("/employees")
     public ApiResponse<EmployeeResponse> getEmployeeByName(@RequestParam String name) {
-        if (name == null || name.isBlank()) { //TODO: 쿼리 파라미터 공백 체크
-            ApiResponse.fail(ErrorCode.FAIL);
+        if (name == null || name.isBlank()) {
+            return ApiResponse.fail(ErrorCode.FAIL);
         }
         return ApiResponse.ok(employeeService.getEmployeeByName(name));
     }
